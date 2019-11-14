@@ -32,5 +32,5 @@ https://github.com/chartjs
 * Wikidata (Espèces) :
 https://www.wikidata.org/wiki/Q3966183
 * PokeAPI (Sprites) :
-https://pokeapi.co/ https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/ + numDex.png
+```https://pokeapi.co/ https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/ + numDex.png```
 
