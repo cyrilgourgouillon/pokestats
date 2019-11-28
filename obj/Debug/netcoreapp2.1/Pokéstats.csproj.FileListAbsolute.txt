@@ -1,0 +1,14 @@
+F:\Boulot\CNAM\Projet Web\Pokéstats\bin\Debug\netcoreapp2.1\Pokéstats.deps.json
+F:\Boulot\CNAM\Projet Web\Pokéstats\bin\Debug\netcoreapp2.1\Pokéstats.runtimeconfig.json
+F:\Boulot\CNAM\Projet Web\Pokéstats\bin\Debug\netcoreapp2.1\Pokéstats.runtimeconfig.dev.json
+F:\Boulot\CNAM\Projet Web\Pokéstats\bin\Debug\netcoreapp2.1\Pokéstats.dll
+F:\Boulot\CNAM\Projet Web\Pokéstats\bin\Debug\netcoreapp2.1\Pokéstats.pdb
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.csprojAssemblyReference.cache
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.csproj.CoreCompileInputs.cache
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.RazorAssemblyInfo.cache
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.RazorAssemblyInfo.cs
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.AssemblyInfoInputs.cache
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.AssemblyInfo.cs
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.RazorTargetAssemblyInfo.cache
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.dll
+F:\Boulot\CNAM\Projet Web\Pokéstats\obj\Debug\netcoreapp2.1\Pokéstats.pdb
