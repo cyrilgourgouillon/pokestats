@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Boulot\\CNAM\\Projet Web\\Pokestats\\Pokestats.csproj": {}
+    "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj": {}
   },
   "projects": {
-    "F:\\Boulot\\CNAM\\Projet Web\\Pokestats\\Pokestats.csproj": {
+    "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Boulot\\CNAM\\Projet Web\\Pokestats\\Pokestats.csproj",
+        "projectUniqueName": "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj",
         "projectName": "Pokestats",
-        "projectPath": "F:\\Boulot\\CNAM\\Projet Web\\Pokestats\\Pokestats.csproj",
+        "projectPath": "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj",
         "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-        "outputPath": "F:\\Boulot\\CNAM\\Projet Web\\Pokestats\\obj\\",
+        "outputPath": "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
