@@ -1,20 +1,40 @@
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\appsettings.Development.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\appsettings.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Pokestats.exe
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Pokestats.deps.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Pokestats.runtimeconfig.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Pokestats.runtimeconfig.dev.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Pokestats.dll
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\Pokestats.pdb
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.csprojAssemblyReference.cache
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\staticwebassets\Pokestats.StaticWebAssets.Manifest.cache
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\staticwebassets\Pokestats.StaticWebAssets.xml
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.MvcApplicationPartsAssemblyInfo.cache
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.AssemblyInfoInputs.cache
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.AssemblyInfo.cs
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.RazorTargetAssemblyInfo.cache
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.dll
-F:\Boulot\CNAM\Projet Web\Pokestats\obj\Debug\netcoreapp3.0\Pokestats.pdb
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\package.json
-F:\Boulot\CNAM\Projet Web\Pokestats\bin\Debug\netcoreapp3.0\package-lock.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/appsettings.Development.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/appsettings.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Pokestats.exe
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Pokestats.deps.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Pokestats.runtimeconfig.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Pokestats.runtimeconfig.dev.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Pokestats.dll
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/Pokestats.pdb
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.csprojAssemblyReference.cache
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/staticwebassets/Pokestats.StaticWebAssets.Manifest.cache
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/staticwebassets/Pokestats.StaticWebAssets.xml
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.MvcApplicationPartsAssemblyInfo.cache
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.AssemblyInfoInputs.cache
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.AssemblyInfo.cs
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.RazorTargetAssemblyInfo.cache
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.dll
+F:/Boulot/CNAM/Projet Web/Pokestats/obj/Debug/netcoreapp3.0/Pokestats.pdb
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/package.json
+F:/Boulot/CNAM/Projet Web/Pokestats/bin/Debug/netcoreapp3.0/package-lock.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/appsettings.Development.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/appsettings.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/package-lock.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/package.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.deps.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.runtimeconfig.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.runtimeconfig.dev.json
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.pdb
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.csprojAssemblyReference.cache
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/staticwebassets/Pokestats.StaticWebAssets.Manifest.cache
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/staticwebassets/Pokestats.StaticWebAssets.xml
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.MvcApplicationPartsAssemblyInfo.cache
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.AssemblyInfoInputs.cache
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.AssemblyInfo.cs
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.RazorTargetAssemblyInfo.cache
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.pdb
