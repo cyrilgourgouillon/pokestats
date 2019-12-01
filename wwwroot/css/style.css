@@ -3,8 +3,78 @@
 */
 
 .logo {
-    width: 300px;
-    height: 80px;
+    width: 250px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.regular-checkbox {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(216, 216, 216);
+    padding: 9px;
+    margin-right: 20px;
+    border-radius: 14px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-checkbox:active,
+.regular-checkbox:checked:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/*.regular-checkbox:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #99a1a7;
+}*/
+
+.regular-checkbox:checked:after {
+    content: '\2714';
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.xRed {
+    background-color: #EB5757;
+}
+
+.xOrange {
+    background-color: #F2994A;
+}
+
+.xYellow {
+    background-color: #F2C94C;
+}
+
+.xGreen {
+    background-color: #219653;
+}
+
+.xBlue {
+    background-color: #2F80ED;
+}
+
+.xPurple {
+    background-color: #9B51E0;
+}
+
+.xBlack {
+    background-color: #333333;
+}
+
+.xWhite {
+    background-color: #F2F2F2;
 }
 
 
