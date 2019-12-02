@@ -76,15 +76,20 @@
     background-color: #F2F2F2;
 }
 
-
-/*!
- * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
- */
-
 body {
     overflow-x: hidden;
+}
+
+#menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 999;
+}
+
+#switch-view {
+    width: 300px;
 }
 
 #sidebar-wrapper {
@@ -103,6 +108,9 @@ body {
 
 #page-content-wrapper {
     min-width: 100%;
+    padding: 1rem;
+    background: linear-gradient(270deg, #5162A7 0%, rgba(83, 126, 197, 0) 100%), #537EC5;
+    position: relative;
 }
 
 #wrapper.toggled #sidebar-wrapper {
