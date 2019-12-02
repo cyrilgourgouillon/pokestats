@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj": {}
+    "/Users/cyrilg/Documents/CNAM/Web/pokestats/Pokestats.csproj": {}
   },
   "projects": {
-    "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj": {
+    "/Users/cyrilg/Documents/CNAM/Web/pokestats/Pokestats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj",
+        "projectUniqueName": "/Users/cyrilg/Documents/CNAM/Web/pokestats/Pokestats.csproj",
         "projectName": "Pokestats",
-        "projectPath": "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\Pokestats.csproj",
-        "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-        "outputPath": "F:\\Boulot\\CNAM\\Projet Web\\pokestats\\obj\\",
+        "projectPath": "/Users/cyrilg/Documents/CNAM/Web/pokestats/Pokestats.csproj",
+        "packagesPath": "/Users/cyrilg/.nuget/packages/",
+        "outputPath": "/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/cyrilg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

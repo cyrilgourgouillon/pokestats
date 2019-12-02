@@ -18,33 +18,43 @@
 /Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.RazorTargetAssemblyInfo.cache
 /Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.dll
 /Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.pdb
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\appsettings.Development.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\appsettings.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\package-lock.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\package.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Pokestats.exe
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Pokestats.deps.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Pokestats.runtimeconfig.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Pokestats.runtimeconfig.dev.json
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Pokestats.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Pokestats.pdb
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.csprojAssemblyReference.cache
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\staticwebassets\Pokestats.StaticWebAssets.Manifest.cache
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\staticwebassets\Pokestats.StaticWebAssets.xml
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.MvcApplicationPartsAssemblyInfo.cache
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.AssemblyInfoInputs.cache
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.AssemblyInfo.cs
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.RazorTargetAssemblyInfo.cache
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.dll
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.pdb
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\AngleSharp.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\dotNetRDF.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\HtmlAgilityPack.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\VDS.Common.dll
-F:\Boulot\CNAM\Projet Web\pokestats\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\Boulot\CNAM\Projet Web\pokestats\obj\Debug\netcoreapp3.0\Pokestats.csproj.CopyComplete
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/appsettings.Development.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/appsettings.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/package-lock.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/package.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.exe
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.deps.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.runtimeconfig.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.runtimeconfig.dev.json
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Pokestats.pdb
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.csprojAssemblyReference.cache
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/staticwebassets/Pokestats.StaticWebAssets.Manifest.cache
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/staticwebassets/Pokestats.StaticWebAssets.xml
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.MvcApplicationPartsAssemblyInfo.cache
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.AssemblyInfoInputs.cache
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.AssemblyInfo.cs
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.RazorTargetAssemblyInfo.cache
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.dll
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.pdb
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/AngleSharp.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/dotNetRDF.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/HtmlAgilityPack.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/System.Xml.XPath.XmlDocument.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/VDS.Common.dll
+F:/Boulot/CNAM/Projet Web/pokestats/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+F:/Boulot/CNAM/Projet Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.csproj.CopyComplete
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/AngleSharp.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/dotNetRDF.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/HtmlAgilityPack.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/System.Xml.XPath.XmlDocument.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/VDS.Common.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cyrilg/Documents/CNAM/Web/pokestats/obj/Debug/netcoreapp3.0/Pokestats.csproj.CopyComplete
