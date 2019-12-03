@@ -21,9 +21,14 @@ namespace Pokestats.Controllers
         }
 
         [HttpGet]
-        public List<object> Get()
+        public Response<List<Parameter>> Get()
         {
-            return GetParameters.request();
+            try {
+                List<Parameter> parameters = GetParameters.request();
+                return new Response<List<Parameter>>(parameters);
+            } catch (Exception ex) {
+                return new Response<List<Parameter>>(ex);
+            }  
         }
     }
 }

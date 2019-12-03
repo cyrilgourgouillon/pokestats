@@ -12,7 +12,7 @@ using System.Dynamic;
 namespace Pokestats.Models {
     public class GetParameters {
 
-        public static List<object> request() {
+        public static List<Parameter> request() {
 
             var results = Request.make(@"
                 SELECT ?wd ?wdLabel ?t (COUNT(?wd) AS ?count) WHERE {
@@ -29,8 +29,8 @@ namespace Pokestats.Models {
 
         }
 
-        private static List<object> resultsToObject (SparqlResultSet results) {
-            List<object> list = new List<object>();
+        private static List<Parameter> resultsToObject (SparqlResultSet results) {
+            List<Parameter> list = new List<Parameter>();
              results.Results.ForEach(row => {
                 Parameter p = new Parameter(
                     row.ElementAt(0).Value.AsValuedNode().AsString(), 
