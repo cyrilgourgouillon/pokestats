@@ -11,20 +11,21 @@ using System.Dynamic;
 
 namespace Pokestats.Models {
     public class GetParameterValues {
-
         public static List<ParameterValue> request(string reference) {
-
+            //Check if the reference is not null/empty and is a valid uri
             checkReference(reference);
 
+            //Get the last part of the uri :
+            //  http://www.wikidata.org/entity/P462
+            //  -> P462
             string property = new System.Uri(reference).Segments.LastOrDefault() ;
             
+            //Check if the property is not null/empty 
             if(String.IsNullOrEmpty(property)){
                 throw new ArgumentException("The specified uri dont include a valid property");
             }
 
-            Console.WriteLine("jnljm " + property);
 
-        
             var results = Request.make(@"
                 SELECT ?prop ?propLabel (COUNT(?pokemon) AS ?Count) WHERE {
                 ?pokemon wdt:P31/wdt:P279* wd:Q3966183.
@@ -36,7 +37,7 @@ namespace Pokestats.Models {
             return resultsToObject(results);
 
         }
-
+        
         private static void checkReference(string reference){
             if(String.IsNullOrEmpty(reference)){
                 throw new ArgumentException("No reference argument provided");
@@ -46,7 +47,7 @@ namespace Pokestats.Models {
                 throw new ArgumentException(reference + " is not a valid URI");
             }
         }
-
+        
         private static bool checkUri(string uri) {
             Uri uriResult;
             return Uri.TryCreate(uri, UriKind.Absolute, out uriResult) 
