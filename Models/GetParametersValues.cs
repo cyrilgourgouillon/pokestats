@@ -25,12 +25,12 @@ namespace Pokestats.Models {
                 throw new ArgumentException("The specified uri dont include a valid property");
             }
 
-
+            
             var results = Request.make(@"
                 SELECT ?prop ?propLabel (COUNT(?pokemon) AS ?Count) WHERE {
                 ?pokemon wdt:P31/wdt:P279* wd:Q3966183.
                 ?pokemon wdt:" + property + @" ?prop .
-                SERVICE wikibase:label { bd:serviceParam wikibase:language '[AUTO_LANGUAGE],en' }
+                SERVICE wikibase:label { bd:serviceParam wikibase:language 'fr ,en' }
                 } GROUP BY ?prop ?propLabel 
             ");
             

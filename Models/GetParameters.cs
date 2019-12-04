@@ -21,7 +21,7 @@ namespace Pokestats.Models {
                 ?wd wikibase:directClaim ?p.
                 ?wd wikibase:propertyType ?t.
                 FILTER (?t != wikibase:ExternalId).
-                SERVICE wikibase:label { bd:serviceParam wikibase:language '[AUTO_LANGUAGE],en' }
+                SERVICE wikibase:label { bd:serviceParam wikibase:language 'fr ,en' }
                 } GROUP by ?wd ?wdLabel ?t
                 HAVING(?count > 20)");
             
