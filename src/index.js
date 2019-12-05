@@ -139,7 +139,7 @@ function printType(allTypes) {
 
     $("#parameters-form").append(`
     <div class="form-group">
-        <div class="form-group">
+        
             <label class="form-check-label mb-2">Type(s)</label>
             <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseType" aria-expanded="false" aria-controls="collapseType">
                 <i class="fas fa-angle-down"></i>
@@ -147,7 +147,7 @@ function printType(allTypes) {
             <div class="form-check collapse pt-1" id="collapseType">
                 ${getTypesHTML(allTypes)}
             </div>
-        </div>
+        
     </div>`);
 }
 
@@ -205,8 +205,8 @@ function checkPartOf(part)  {
 
 function printGen(allGens) {
     $("#parameters-form").append(`
-        <label class="form-check-label mb-2">Génération</label>
         <div class="form-group">
+            <label class="form-check-label mb-2">Génération</label>
             <select class="selectpicker">
                 ${getGensHTML(allGens)}
             </select>
@@ -237,7 +237,14 @@ function printQuantity(param) {
         <div class="form-group">
             <label for="Label">${param.name}</label>
             <span class="badge badge-danger">${param.count}</span>
-            <input type="number" name="${param.name}" class="form-control" id="Label">
+            <div class="form-row">
+                <div class="col">
+                    <input type="number" name="${param.name}" class="form-control" id="${param.name}" placeholder="min">
+                </div>
+                <div class="col">
+                    <input type="number" name="${param.name}" class="form-control" id="${param.name}" placeholder="max">
+                </div>
+            </div>
         </div>
     `);
 }
