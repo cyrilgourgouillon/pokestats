@@ -47,14 +47,17 @@
                             <label class="form-check-label">Couleur(s)</label>
                             <span class="badge badge-danger">340</span>
                             <div class="form-check">
-                                <input class="form-check-input regular-checkbox xRed" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <input class="form-check-input regular-checkbox xOrange" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <input class="form-check-input regular-checkbox xYellow" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <input class="form-check-input regular-checkbox xGreen" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <input class="form-check-input regular-checkbox xBlue" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <input class="form-check-input regular-checkbox xPurple" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <input class="form-check-input regular-checkbox xBlack" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <input class="form-check-input regular-checkbox xWhite" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <div class="form-check form-check-inline">
+
+                                    <label for="pokemon-bleu" class="btn xbleu rounded-button btn-badge-text">
+                                        <input type="checkbox" id="pokemon-bleu" class="badgebox">
+                                        <span class="badge-circle  badge text-white">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                     </label>
+                                    <span class="badge badge-count badge-danger">502</span>
+
+                                </div>
                             </div>
                         </div>
 
@@ -67,9 +70,8 @@
                                 <span class="badge badge-pill badge-danger">Feu <input type="checkbox" id="default" class="badgebox"></span>
                             </div>
                         </div>
-
-                        <button type="submit" class="btn btn-primary">Rechercher</button>
                     </form>
+                    <button type="submit" class="btn btn-primary">Rechercher</button>
                 </div>
             </div>
         </div>

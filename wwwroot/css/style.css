@@ -44,36 +44,85 @@
     color: rgb(255, 255, 255);
 }
 
-.xRed {
+.xrouge {
     background-color: #EB5757;
 }
 
-.xOrange {
+.xorange {
     background-color: #F2994A;
 }
 
-.xYellow {
+.xjaune {
     background-color: #F2C94C;
 }
 
-.xGreen {
+.xvert {
     background-color: #219653;
 }
 
-.xBlue {
+.xbleu {
     background-color: #2F80ED;
 }
 
-.xPurple {
+.xrose {
     background-color: #9B51E0;
 }
 
-.xBlack {
+.xnoir {
     background-color: #333333;
 }
 
-.xWhite {
+.xgris {
+    background-color: rgb(97, 97, 97);
+}
+
+.xblanc {
     background-color: #F2F2F2;
+    border-color: rgb(97, 97, 97);
+}
+
+.xbrun {
+    background-color: rgb(107, 61, 17);
+}
+
+.btn-badge-text {
+    padding: .2rem .75rem .375rem .9rem;
+}
+
+.badge-count {
+    position: relative;
+    top: -17px;
+    left: -13px;
+}
+
+.rounded-button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.badge-white {
+    background-color: white;
+    border-radius: 50rem;
+    left: -5px;
+}
+
+.badge-circle {
+    top: -27px!important;
+    left: -11px!important;
+}
+
+.badgebox {
+    opacity: 0;
+}
+
+.badgebox+.badge {
+    text-indent: -999999px;
+    width: 20px;
+}
+
+.badgebox:checked+.badge {
+    text-indent: 0;
 }
 
 body {

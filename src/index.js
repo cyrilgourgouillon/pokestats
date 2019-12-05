@@ -4,11 +4,17 @@ require("bootstrap");
 //Handle sidebar toggle
 require("./sideToggle");
 
+const parametersType = {
+    ITEM: "http://wikiba.se/ontology#WikibaseItem",
+    STRING: "http://wikiba.se/ontology#String",
+    QUANTITY: "http://wikiba.se/ontology#Quantity",
+}
+
 /**
  * Get all the pokemons parameters
  */
-$.get("api/getParameters",  (response) => {
-    if(response.error){
+$.get("api/getParameters", (response) => {
+    if (response.error) {
         //Print the error
         console.error(error);
     } else {
@@ -28,53 +34,79 @@ function printParameters(parameters) {
     })
 }
 
-const parametersType = {
-    ITEM : "http://wikiba.se/ontology#WikibaseItem",
-    STRING: "http://wikiba.se/ontology#String",
-    QUANTITY: "http://wikiba.se/ontology#Quantity",
-}
-
-function printParam( param) {
-    switch(param.type) {
-        case(parametersType.ITEM) : 
-            printItem(param); break;
-        case(parametersType.STRING) : 
-            printString(param); break;
-        case(parametersType.QUANTITY) : 
-            printQuantity(param); break;
-        default: 
-            console.error("Unknown type"); break;
+function printParam(param) {
+    switch (param.type) {
+        case (parametersType.ITEM):
+            printItem(param);
+            break;
+        case (parametersType.STRING):
+            printString(param);
+            break;
+        case (parametersType.QUANTITY):
+            printQuantity(param);
+            break;
+        default:
+            console.error("Unknown type");
+            break;
     }
 }
 
 
 function printItem(param) {
     console.log("printItem", param.name, param.reference);
-    switch(param.name) {
-        case("couleur"):
-            printColor(param); break;
-        case("nature de l'élément"):
+    switch (param.name) {
+        case ("couleur"): //color
+            printColor(param);
+            break;
+        case ("nature de l'élément"): //instance of
             //printInstanceOf(param); 
             break;
-        case("partie de"):
+        case ("partie de"): //part of
             //printPartOf(param); 
             break;
-        default : 
+        default:
             printDefaultItem(param);
     }
 }
 
 function printColor(parameter) {
     $.get("api/getParameterValues", {
-        reference : parameter.reference
+        reference: parameter.reference
     }, (response) => {
-        if(response.error){
+        if (response.error) {
             //Print the error
             console.error(error);
         } else {
             console.log(response.data);
+
+            $("#parameters-form").append(`
+                <div class="form-group">
+                    <label class="form-check-label mb-2">Couleur(s)</label>
+                    <div class="form-check">
+                        ${getColorsHTML(response.data)}
+                    </div>
+                </div>
+            `);
         }
     });
+}
+
+function getColorsHTML(colors) {
+    return colors.reduce((acc, color) => acc += getColorHTML(color), "");
+}
+
+function getColorHTML(color) {
+    return `
+        <div class="form-check form-check-inline">
+            <label for="pokemon-${color.name}" class="btn x${color.name} rounded-button btn-badge-text">
+                <input type="checkbox" id="pokemon-${color.name}" class="badgebox" value="${color.name}">
+                <span class="badge-circle badge text-white">
+                    <i class="fa fa-check"></i>
+                </span>
+            </label>
+            <span class="badge badge-count badge-danger">${color.count}</span>
+        </div>
+    `;
 }
 
 function printString(param) {
@@ -82,7 +114,7 @@ function printString(param) {
 }
 
 function printQuantity(param) {
-    console.log("printQuantity", param.name);
+    //console.log("printQuantity", param.name);
 
     $("#parameters-form").append(`
         <div class="form-group">
@@ -94,5 +126,5 @@ function printQuantity(param) {
 }
 
 function printDefaultItem(param) {
-    console.log("printDefaultItem", param.name);
+    //console.log("printDefaultItem", param.name);
 }
