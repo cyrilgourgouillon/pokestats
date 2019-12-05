@@ -1,5 +1,7 @@
 import * as $ from "jquery";
+//import { lookup } from "dns";
 require("bootstrap");
+require("bootstrap-select");
 
 //Handle sidebar toggle
 require("./sideToggle");
@@ -62,7 +64,7 @@ function printItem(param) {
             printInstanceOf(param);
             break;
         case ("partie de"): //part of
-            //printPartOf(param); 
+            printPartOf(param);
             break;
         default:
             printDefaultItem(param);
@@ -77,7 +79,6 @@ function printColor(parameter) {
             //Print the error
             console.error(error);
         } else {
-
             $("#parameters-form").append(`
                 <div class="form-group">
                     <label class="form-check-label mb-2">Couleur(s)</label>
@@ -130,7 +131,6 @@ function checkInstanceOf(instance) {
 
     allTypes = instance.filter(i => i.name.startsWith("Pokémon de type "));
 
-
     printType(allTypes);
 
 }
@@ -177,6 +177,54 @@ function getTypeHTML(type) {
 function removeAccent(string) {
     return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+
+function printPartOf(parameter) {
+    $.get("api/getParameterValues", {
+        reference: parameter.reference
+    }, (response) => {
+        if (response.error) {
+            //Print the error
+            console.error(error);
+        } else {
+            checkPartOf(response.data);
+        }
+    });
+}
+
+function checkPartOf(part)  {
+    let allGens;
+
+    allGens = part.filter(i => i.name.endsWith("génération"));
+
+    for (var i = 0; i < allGens.length; i++) {
+        console.log(allGens[i]);
+    }
+
+    printGen(allGens);
+}
+
+function printGen(allGens) {
+    $("#parameters-form").append(`
+        <label class="form-check-label mb-2">Génération</label>
+        <div class="form-group">
+            <select class="selectpicker">
+                ${getGensHTML(allGens)}
+            </select>
+        </div>
+    `);
+}
+
+function getGensHTML(gens) {
+    return gens.reduce((acc, gen) => acc += getGenHTML(gen), "");
+}
+
+function getGenHTML(gen) {
+    return `
+        <option value="">${gen.name}</option>
+        <span class="badge badge-count badge-danger">${gen.count}</span>
+    `;
+}
+
 
 function printString(param) {
     console.log("printString", param.name);
