@@ -119,7 +119,6 @@ function printInstanceOf(parameter) {
             //Print the error
             console.error(error);
         } else {
-            console.log(response.data);
             checkInstanceOf(response.data);
         }
     });
