@@ -44,36 +44,71 @@
     color: rgb(255, 255, 255);
 }
 
-.xrouge {
+.xrouge,
+.type-feu {
     background-color: #EB5757;
+}
+
+.type-combat {
+    background-color: rgb(112, 15, 8);
+}
+
+.type-vol,
+.type-glace {
+    background-color: rgb(158, 206, 255);
+}
+
+.type-dragon {
+    background-color: rgb(36, 10, 128);
 }
 
 .xorange {
     background-color: #F2994A;
 }
 
-.xjaune {
+.xjaune,
+.type-electrique {
     background-color: #F2C94C;
 }
 
-.xvert {
+.xvert,
+.type-plante {
     background-color: #219653;
 }
 
-.xbleu {
+.type-insecte {
+    background-color: rgb(98, 133, 42);
+}
+
+.xbleu,
+.type-eau {
     background-color: #2F80ED;
 }
 
-.xrose {
-    background-color: #9B51E0;
+.xrose,
+.type-fee,
+.type-psy {
+    background-color: rgb(219, 81, 224);
 }
 
-.xnoir {
+.xnoir,
+.type-tenebres {
     background-color: #333333;
 }
 
-.xgris {
+.violet,
+.type-spectre,
+.type-poison {
+    background-color: rgb(80, 27, 179);
+}
+
+.xgris,
+.type-acier {
     background-color: rgb(97, 97, 97);
+}
+
+.type-normal {
+    background-color: rgb(165, 165, 165);
 }
 
 .xblanc {
@@ -81,8 +116,13 @@
     border-color: rgb(97, 97, 97);
 }
 
-.xbrun {
+.xbrun,
+.type-sol {
     background-color: rgb(107, 61, 17);
+}
+
+.type-roche {
+    background-color: rgb(141, 118, 55);
 }
 
 .btn-badge-text {
@@ -91,8 +131,8 @@
 
 .badge-count {
     position: relative;
-    top: -17px;
-    left: -13px;
+    top: -10px;
+    left: -10px;
 }
 
 .rounded-button {
