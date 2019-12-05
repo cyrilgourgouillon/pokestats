@@ -196,10 +196,6 @@ function checkPartOf(part)  {
 
     allGens = part.filter(i => i.name.endsWith("génération"));
 
-    for (var i = 0; i < allGens.length; i++) {
-        console.log(allGens[i]);
-    }
-
     printGen(allGens);
 }
 
@@ -227,11 +223,18 @@ function getGenHTML(gen) {
 
 
 function printString(param) {
-    console.log("printString", param.name);
+    //console.log("printString", param.name);
+    $("#parameters-form").append(`
+        <div class="form-group">
+            <label for="Label">${param.name}</label>
+            <span class="badge badge-danger">${param.count}</span>
+            <input type="text" name="${param.name}" class="form-control" id="${param.name}">                
+        </div>
+    `);
 }
 
 function printQuantity(param) {
-    //console.log("printQuantity", param.name);
+    console.log("printQuantity", param.name);
 
     $("#parameters-form").append(`
         <div class="form-group">
@@ -250,5 +253,5 @@ function printQuantity(param) {
 }
 
 function printDefaultItem(param) {
-    //console.log("printDefaultItem", param.name);
+    console.log("printDefaultItem", param.name);
 }
