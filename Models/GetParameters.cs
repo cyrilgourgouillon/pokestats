@@ -14,7 +14,7 @@ namespace Pokestats.Models {
 
         public static List<Parameter> request() {
 
-            var results = Request.make(@"
+            SparqlResultSet results = Request.make(@"
                 SELECT ?wd ?wdLabel ?t (COUNT(?wd) AS ?count) WHERE {
                 ?pokemon wdt:P31/wdt:P279* wd:Q3966183 .
                 ?pokemon ?p ?statement .
