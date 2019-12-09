@@ -16,8 +16,6 @@ namespace Pokestats.Models {
             
         public static List<Pokemon> request(List<Filter> filters) {
 
-            Console.WriteLine("hhlljnbljbl " + filters);
-
             IEnumerable<string> names = filters.Select(filter => filter.name);
 
             string request = @"
@@ -87,8 +85,6 @@ namespace Pokestats.Models {
                     if(filter.values.Count == 2){
                         string name = Utils.normalizeName(filter.name);
                         acc.AppendLine("FILTER(?" + name + " > " + filter.values[0] + " && ?" + name + " < " + filter.values[1] + ")");
-                    } else {
-                        throw new ArgumentException("Type quantity must have 2 arguments (min & max)");
                     }
                 }
                 return acc;
@@ -97,7 +93,7 @@ namespace Pokestats.Models {
 
         public static string filterString(List<Filter> filters) {
             return filters.Aggregate(new StringBuilder(), (acc, filter) => {
-                if(filter.type == Types.str) {
+                if(filter.type == Types.str && filter.values.Count != 0) {
                         string name = Utils.normalizeName(filter.name);
                         acc.AppendLine("FILTER(" + string.Join(" || ", filter.values.Select(val => {
                             return "?" + Utils.normalizeName(filter.name) + " = " + "'" + val + "'";
@@ -119,11 +115,11 @@ namespace Pokestats.Models {
                     Pokemon pokemon = pokemons.Find(pk => pk.name == pkName);
                     string valName = names.ElementAt(i-1);
                     if(!pokemon.values.Exists(val => val.name == valName)){
-                        pokemon.values.Add(new Values(names.ElementAt(i-1), new List<string>()));
+                        pokemon.values.Add(new Values(valName, new List<string>()));
                     }
                     Values values = pokemon.values.Find(val => val.name == valName);
-                    IValuedNode value = row.ElementAt(i).Value.AsValuedNode();
-                    string val = (value != null) ? row.ElementAt(i).Value.AsValuedNode().AsString() : "";
+                    IValuedNode value = row[i].AsValuedNode();
+                    string val = (value != null) ? value.AsString() : "";
                     if(!values.vals.Exists(v => v == val)){
                         values.vals.Add(val);
                     }

@@ -23,7 +23,8 @@ namespace Pokestats.Models {
                 FILTER (?t != wikibase:ExternalId).
                 SERVICE wikibase:label { bd:serviceParam wikibase:language 'fr ,en' }
                 } GROUP by ?wd ?wdLabel ?t
-                HAVING(?count > 20)");
+                HAVING(?count > 20)
+                ORDER BY DESC(?count)");
             
             return resultsToObject(results);
 

@@ -16,6 +16,7 @@ namespace Pokestats.Models {
                 ?pokemon " + Utils.getObjectWithUrl("wdt", reference) + @" ?prop .
                 SERVICE wikibase:label { bd:serviceParam wikibase:language 'fr, en' }
                 } GROUP BY ?prop ?propLabel 
+                ORDER BY DESC(?count)
             ");
             
             return resultsToObject(results);
