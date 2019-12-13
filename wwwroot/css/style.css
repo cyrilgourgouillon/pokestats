@@ -219,3 +219,7 @@ body {
         margin-left: -500px;
     }
 }
+
+.ag-cell {
+    text-overflow: inherit!important;
+}

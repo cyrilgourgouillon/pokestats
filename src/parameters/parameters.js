@@ -1,4 +1,6 @@
 import * as $ from "jquery";
+import {EventEmitter} from "events";
+
 //import { lookup } from "dns";
 require("bootstrap");
 require("bootstrap-select");
@@ -12,9 +14,10 @@ import {getString} from "./getHTMLstring";
 import {printParameter} from "./printParameter";
 
 //Import on submit parameters form 
-require("./submitParameters");
+const submit = require("./submitParameters");
 
-
+//Create event to target the table when we gets pokemons
+export const event = new EventEmitter();
 
 const parametersType = {
     ITEM: "http://wikiba.se/ontology#WikibaseItem",
@@ -36,6 +39,7 @@ $.get("api/getParameters", (response) => {
 
 
 function handleParameters(parameters) {
+    event.emit("getParameters", parameters);
     printParameters(parameters);
 }
 
@@ -44,8 +48,6 @@ function printParameters(parameters) {
     parameters.forEach(param => {
         printParam(param);
     });
-    console.log("hey");
-   
 }
 
 function printParam(param) {
@@ -64,3 +66,7 @@ function printParam(param) {
             break;
     }
 }
+
+submit.event.on("response", (data) => {
+    event.emit("getPokemons", data);
+});

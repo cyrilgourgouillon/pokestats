@@ -1,4 +1,7 @@
 import * as $ from "jquery";
+import {EventEmitter} from "events"
+
+export const event = new EventEmitter(); 
 
 const parametersType = {
     ITEM: "http://wikiba.se/ontology#WikibaseItem",
@@ -93,11 +96,13 @@ function getQuantityValue(el) {
 function deleteDuplicate(filters) {
     filters.forEach((filter, index) => {
         if(filter.name === "type") {
-            filters.find(f => f.name === "nature de l'élément").values.concat(filter.values);
+            const nature = filters.find(f => f.name === "nature de l'élément");
+            nature.values = nature.values.concat(filter.values);
             filters.splice(index, 1);
         }
         if(filter.name === "génération") {
-            filters.find(f => f.name === "partie de").values.concat(filter.values);
+            const partie = filters.find(f => f.name === "partie de");
+            partie.values = partie.values.concat(filter.values);
             filters.splice(index, 1);
         }
     })
@@ -110,6 +115,14 @@ function getPokemons(filters) {
         url: '/api/getPokemons',
         data: JSON.stringify(filters),
         dataType: "json",
-        complete: (result) => console.log(result.responseJSON)
+        complete: (result) => handleResponse(result.responseJSON)
      });
+}
+
+function handleResponse(result) {
+    if (result.error === null) {
+        event.emit("response", result.data);
+    } else {
+        console.error(result.error);
+    }
 }
