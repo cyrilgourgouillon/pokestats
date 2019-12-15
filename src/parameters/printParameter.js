@@ -10,7 +10,7 @@ export function printParameter(parameter, printFunction, values = null) {
 
     const collapseId = `collapse${removeSpecialCharacters(parameter.name)}`;
     
-    const collpaseBtn = `<button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}"><i class="fas fa-angle-down"></i></button>`;
+    const collpaseBtn = `<button class="ml-2 btn btn-sm btn-light" type="button" data-toggle="collapse" data-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}"><i class="fas fa-angle-down"></i></button>`;
 
     $("#dynamic-parameters-form").append(`
         <div ${parameterToAttributes(parameter)} class="form-group">
