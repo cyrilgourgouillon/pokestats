@@ -11,8 +11,15 @@ const parametersType = {
 
 $("#parameters-form").submit((event) => {
     event.preventDefault();
-    getFormParameters();
+    const filters = getFormParameters();
+    setButtonLoading();
+    getPokemons(filters);
 });
+
+function setButtonLoading() {
+    $("#submitButton").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="sr-only">Recherche...</span>')
+}
+
 
 function getFormParameters() {
     const filters = []
@@ -27,7 +34,7 @@ function getFormParameters() {
         filters.push(parameter);
     });
     deleteDuplicate(filters);
-    getPokemons(filters);
+    return filters;
 }
 
 function getValues(el) {
@@ -121,8 +128,13 @@ function getPokemons(filters) {
 
 function handleResponse(result) {
     if (result.error === null) {
+        resetButton();
         event.emit("response", result.data);
     } else {
         console.error(result.error);
     }
+}
+
+function resetButton() {
+    $("#submitButton").html('Rechercher');
 }
