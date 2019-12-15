@@ -150,8 +150,6 @@ $("#afficher-graph").click(() => {
             }
         }
 
-        console.log(labels, data);
-
         myChart.data.labels = labels;
         myChart.data.datasets = [{
             label: y,

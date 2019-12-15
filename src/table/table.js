@@ -17,7 +17,7 @@ export function update(pokemons) {
     }
 
     if(pokemons.length === 0) {
-        grid = new Grid(eGridDiv, {overlayLoadingTemplate: '<span class="ag-overlay-loading-center">Aucun pokémons ne correspondent à ces critères</span>',});
+        grid = new Grid(eGridDiv, {overlayLoadingTemplate: '<span class="ag-overlay-loading-center">Aucun pokémon ne correspond à ces critères</span>',});
         return;
     }
 
