@@ -14,7 +14,8 @@ export function getItem(parameter) {
             requestParameter(parameter, handlePartOfResponse);
             break;
         default:
-            handleDefaultItem(parameter);
+            requestParameter(parameter, handleDefaultItem);
+            break;
     }
 }
 
@@ -31,7 +32,7 @@ function requestParameter(parameter, handleResponseFunction) {
 }
 
 function handleColorsResponse(parameter, colors){
-    printParameter(parameter, getColorsHTML, colors);
+    printParameter(colorParameter, getColorsHTML, colors);
 }
 
 function handleInstanceOfResponse(parameter, instances){
@@ -59,8 +60,8 @@ function handlePartOfResponse(parameter, parts){
     printParameter(parameter, getDefaultItems, others);
 }
 
-function handleDefaultItem() {
-    console.log("Default Item not working yet");
+function handleDefaultItem(parameter, values) {
+    printParameter(parameter, getDefaultItems, values);
 }
 
 
@@ -110,15 +111,24 @@ function removeAccent(string) {
 
 function getDefaultItems(gens) {
     return `
-        <select data-width="279px" class="selectpicker" multiple>
-        ${gens.reduce((acc, gen) => acc += getDefaultItem(gen), "")}
-        </select>
+            <select data-width="279px" class="selectpicker" multiple>
+            ${gens.reduce((acc, gen) => acc += getDefaultItem(gen), "")}
+            </select>
+        </div>
     `;
     
 }
 
 function getDefaultItem(gen) {
     return `
-        <option data-content="${gen.name}<span class='ml-1 badge badge-danger'>${gen.count}</span>" value="${gen.reference}"></option>
+        <option data-content="${truncateString(gen.name,25)}<span class='ml-1 badge badge-danger'>${gen.count}</span>" value="${gen.reference}"></option>
     `;
 }
+
+function truncateString(str, num) {
+    if (str.length <= num) {
+      return str
+    }
+    return str.slice(0, num) + '<br/>' +  truncateString(str.slice(num, str.length), num);
+  }
+  

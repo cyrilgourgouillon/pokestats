@@ -72,6 +72,7 @@ function getCheckboxValue(name) {
 }
 
 function getItemDefaultValue(el) {
+    console.log($(el).find("select").val());
     return $(el).find("select").val();
 }
 

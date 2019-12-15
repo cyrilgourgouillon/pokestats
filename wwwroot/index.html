@@ -29,15 +29,17 @@
 
             <div class="container">
                 <h4 class="text-center mb-3">Critères de sélection...</h4>
-                <div class="container">
-                    <form id="parameters-form">
+                <form  id="parameters-form">
+                    <div class="px-3" style="height: 75vh; overflow-y: scroll; overflow-x: hidden;"  >
                         <div id="dynamic-parameters-form">
                             <!-- Chargement à faire -->
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Rechercher</button>
-                    </form>
-                    
-                </div>
+                    </div>
+                    <div class="mt-3 mb-3">
+                        <button type="submit" class=" btn btn-primary btn-block">Rechercher</button>
+                    </div>
+                   
+                </form>
             </div>
         </div>
 
@@ -65,10 +67,10 @@
             </div>
 
             <div class="container-fluid m-0 tab-content">
-                <table style="height: 85vh;width:100%;" id="pokemons-table" class="ag-theme-material fade  tab-pane ">
+                <table style="height: 85vh;width:100%;" id="pokemons-table" class="ag-theme-material fade active show tab-pane ">
                     
                 </table>
-                <div style="height: 85vh;width:100%;" id="pokemons-graph" class="bg-white fade active show tab-pane ">
+                <div style="height: 85vh;width:100%;" id="pokemons-graph" class="bg-white fade  tab-pane ">
                     <div class="container-fluid h-100">
                         <div class="row h-100">
                             <div class="col-2 bg-light border-right">
