@@ -32,7 +32,7 @@ function requestParameter(parameter, handleResponseFunction) {
 }
 
 function handleColorsResponse(parameter, colors){
-    printParameter(colorParameter, getColorsHTML, colors);
+    printParameter(parameter, getColorsHTML, colors);
 }
 
 function handleInstanceOfResponse(parameter, instances){
