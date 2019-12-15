@@ -1,28 +1,27 @@
-import {Grid, }  from "ag-grid-community";
+import {Grid}  from "ag-grid-community";
 
 let grid;
-let parameters;
-const typeQUANTITY = "http://wikiba.se/ontology#Quantity";
+let gridOptions;
+
+const eGridDiv = document.querySelector('#pokemons-table');
+grid = new Grid(eGridDiv, {overlayLoadingTemplate: '<span class="ag-overlay-loading-center">En attente de la séléctions des critères</span>',});
+
 
 export function stockParams(params){
     parameters = params;
 }
 
-export function update(pokeData) {
+export function update(pokemons) {
     if(grid){
         grid.destroy();
     }
     
-
-    //Split nature de et partie de pour avoir les types et les generations à part
-    const pokemons = splitParams(pokeData);
-
     //Get the header olumn def
     const columns = getColumn(pokemons);
     //Pokmons object to displayable rows
     const rows = pokemonsToRow(pokemons);
 
-    const gridOptions = {
+    gridOptions = {
         defaultColDef: {
             resizable: true,
             sortable: true
@@ -37,12 +36,9 @@ export function update(pokeData) {
     };
 
     
-    const eGridDiv = document.querySelector('#pokemons-table');
+    
     grid = new Grid(eGridDiv, gridOptions);
-
-    window.onresize = () => {
-        gridOptions.api.sizeColumnsToFit();
-    }
+ 
 }
 
 function getColumn(pokemons) {
@@ -77,58 +73,6 @@ function pokemonsToRow(pokemons) {
     });
 }
 
-function splitParams(poke) {
-    const pokemons = [...poke];
-    pokemons.forEach(pokemon => {
-        pokemon.values.forEach(parameter => {
-            switch(parameter.name) {
-                case "nature de l'élément":
-                    splitNature(pokemon, parameter);
-                    break;
-                case "partie de":
-                    splitPartie(pokemon, parameter);
-                    break;
-            };
-            if(parameters.filter(p => p.type === typeQUANTITY).some(p => p.name === parameter.name)) {
-                convertInt(parameter);
-            }
-        });
-    });
-    return pokemons;
-}
-
-function splitNature(pokemon, parameter) {
-     //Isolate type 
-     pokemon.values.push(
-         {
-             name: "type",
-             vals: parameter.vals.filter(i => i.startsWith("Pokémon de type "))
-         }
-     );
-     parameter.vals = parameter.vals.filter(i => !i.startsWith("Pokémon de type "));
-}
-
-function splitPartie(pokemon, parameter) {
-    //Isolate type 
-    pokemon.values.push(
-        {
-            name: "génération",
-            vals: parameter.vals.filter(i => i.endsWith("génération"))
-        }
-    );
-    parameter.vals = parameter.vals.filter(i => !i.endsWith("génération"));
-}
-
-function convertInt(parameter) {
-    //Corect a bug with double values
-    if(parameter.vals.length > 1 ){
-        parameter.vals = [parameter.vals[1]];
-    }
-    parameter.vals = parameter.vals.map(val => {
-        const int = parseInt(val);
-        return (isNaN(int)) ? null : int;
-    });
-}
 
 class pokemonIconRenderer {
     init(params) {
@@ -151,3 +95,14 @@ class pokemonIconRenderer {
     }
 }
 
+
+window.onresize = () => {
+    resizeTable();
+}
+
+export function resizeTable() {
+    console.log("ok");
+    if(gridOptions) {
+        gridOptions.api.sizeColumnsToFit();
+    }
+}

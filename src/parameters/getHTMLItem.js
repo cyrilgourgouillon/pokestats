@@ -1,7 +1,6 @@
 import * as $ from "jquery";
 
 import {printParameter} from "./printParameter";
-import { type } from "os";
 
 export function getItem(parameter) {
     switch (parameter.name) {

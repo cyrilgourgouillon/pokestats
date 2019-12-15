@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../node_modules/ag-grid-community/dist/styles/ag-grid.min.css">
     <link rel="stylesheet" href="../node_modules/ag-grid-community/dist/styles/ag-theme-material.css">
+    <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
 
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -50,10 +51,10 @@
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav m-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tableau</a>
+                                <a class="nav-link active" data-toggle="tab" href="#pokemons-table" role="tab" href="#">Tableau</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Graphe</a>
+                                <a class="nav-link" data-toggle="tab" href="#pokemons-graph" role="tab" href="#">Graphe</a>
                             </li>
                         </ul>
                     </div>
@@ -63,12 +64,38 @@
 
             </div>
 
-            <div class="container-fluid m-0">
-                <div class="table-responsive">
-                    <table style="height: 88vh;width:100%;" id="pokemons-table" class="ag-theme-material">
-                       
-                    </table>
-                </div> 
+            <div class="container-fluid m-0 tab-content">
+                <table style="height: 85vh;width:100%;" id="pokemons-table" class="ag-theme-material fade  tab-pane ">
+                    
+                </table>
+                <div style="height: 85vh;width:100%;" id="pokemons-graph" class="bg-white fade active show tab-pane ">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-2 bg-light border-right">
+                                <div class="py-4">
+                                    <h5 class="mb-4">Critères d'affichage...</h5 class="m-4">
+                                        <div  class="form-group">
+                                            <label>Axe X</label>
+                                             <select id="graphe-x" class=" form-control form-control-sm">
+                                                 <option>En attente des critères</option>
+                                             </select>
+                                        </div>
+                                        <div  class="form-group">
+                                            <label>Axe Y</label>
+                                             <select id="graphe-y"  class="form-control form-control-sm">
+                                                <option>En attente des critères</option>
+                                             </select>
+                                        </div>
+                                        <button id="afficher-graph" class="btn btn-primary mt-4 btn-block">Afficher</button>
+                                </div>
+                            </div>
+                            <div class="col-10 h-100 py-3">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
             </div>
         </div>
 
