@@ -15,6 +15,12 @@ export function update(pokemons) {
     if(grid){
         grid.destroy();
     }
+
+    if(pokemons.length === 0) {
+        grid = new Grid(eGridDiv, {overlayLoadingTemplate: '<span class="ag-overlay-loading-center">Aucun pokémons ne correspondent à ces critères</span>',});
+        return;
+    }
+
     
     //Get the header olumn def
     const columns = getColumn(pokemons);

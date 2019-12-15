@@ -41,6 +41,12 @@ export function update(pokes, params) {
 }
 
 function updateSelect(pokemons, parameters) {
+
+    if(pokemons.length === 0) {
+        return;
+    }
+
+
     const labels = ["Sélectionner...","nom"].concat(pokemons[0].values.map(value => value.name));
     const data = ["Sélectionner..."].concat(pokemons[0].values.reduce((acc, value) => {
         if(parameters.filter(p => p.type === parametersType.QUANTITY).some(p => p.name === value.name)) {
