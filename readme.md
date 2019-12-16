@@ -51,14 +51,14 @@ https://www.wikidata.org/wiki/Q3966183
 Prérequis :
 * Git
 * Dotnet core 3.0
-* Nodejs (npm
+* Nodejs (npm)
 
-Installation (depuis un terminal) :
-* Cloner le projet github :
+Installation (depuis un terminal):
+* Cloner le projet github:
 ```` git clone https://github.com/cyrilgourgouillon/pokestats.git ````
-* Se rendre dans le réperoire :
+* Se rendre dans le réperoire:
 ```` cd pokestat ````
-* Installer les dépendances :
+* Installer les dépendances:
 ```` npm install ````
-* Lancer le serveur C# :
+* Lancer le serveur C#:
 ```` dotnet run ````
