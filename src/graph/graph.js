@@ -158,9 +158,6 @@ $("#afficher-graph").click(() => {
         }];
 
         myChart.update();
-
-        
-
     }
 });
 

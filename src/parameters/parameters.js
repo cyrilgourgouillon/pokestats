@@ -31,7 +31,7 @@ const parametersType = {
 $.get("api/getParameters", (response) => {
     if (response.error) {
         //Print the error
-        console.error(error);
+        console.error(response.error);
     } else {
         handleParameters(response.data);
     }
